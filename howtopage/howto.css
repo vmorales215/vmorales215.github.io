@@ -1,0 +1,87 @@
+
+#wikilogo{
+    background-color: #93b874; 
+    top: 0;
+    width: 100%;
+    position:fixed;
+    padding: 5px;
+    left: 0;
+    
+}
+body{
+    background-color: #ECEBE8;
+}
+hr{
+    color: black;
+}
+#centerwrap{
+    width: 900px;
+    margin: 0 auto;
+    align-content: center;
+   
+}
+#headings{
+    font-family: Avenir;
+    position: sticky;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    color: #222;
+    width:900px;
+/*    background-color: #ECEBE8;*/
+    margin: 0 auto;
+}
+#step_num{
+
+    font-size: 30pt;
+    color: #545454;
+    padding: 15px 10px 0px 10px;
+    float: left;
+    font-weight: bold;
+   
+}
+#step{
+    background-color: white;
+     border-radius: 6px;
+padding: 6pt;
+}
+img{border-radius: 8px;
+   
+}
+span{
+    background-color: lightgray;
+    padding: 0 10px;
+    border-style: groove;
+}
+p{
+    font-family: avenir;
+        color: #545454;
+    letter-spacing: .25pt;
+    text-align:justify;
+    font-size: 14pt;
+    margin-left: 5;
+    margin-right: 5;
+    
+}
+li{
+    font-family: avenir;
+        color: #545454;
+    letter-spacing: .25pt;
+    font-size: 12pt;
+    padding-bottom: 3px;
+}
+#subbullet{
+    font-size: 12pt;
+    line-height: 1;
+    font-weight:bold;
+}
+#helplinks{
+    font-size: 10pt;
+    text-decoration: none;
+    background-color: #F6F8F7;
+    margin: auto;
+}
+.links:link{
+    text-decoration:none; 
+color: #363;}   
+

@@ -1,0 +1,38 @@
+
+body{
+    background: url(images/dsc_0004%20copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+#title{
+   position: absolute;
+	bottom: 40%;
+	left: 25%;
+	width: 50%;
+	text-align: center;
+	border: 1px solid white;
+    font-family: lintel;
+    font font-weight: bolder;
+    font-size: 20pt;
+    color: orangered;
+    border: 2pt solid orangered;
+align-self: center;
+}
+
+a:link, a:visited {
+	color: orangered;
+	font-size: 50px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: navajowhite;
+	text-decoration: none;
+}
+
+a:active {
+	color: ghostwhite;
+	text-decoration:none;
+}

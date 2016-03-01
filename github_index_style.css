@@ -1,0 +1,83 @@
+
+#backimage{
+    background: url(145343.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ body{
+    position: relative;
+    bottom: 40%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    font-family: lintel;
+    font font-weight: bolder;
+    font-size: 20pt;
+   
+    align-self: center;
+} 
+h1{
+    font-size: 40pt;
+    color: azure;
+}
+h3{
+    color: azure;
+}
+ol.u{
+     margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ a:link{
+    color:white;
+    text-decoration: none;
+    animation-name: button;
+}
+/* a:hover{
+    color:aquamarine;
+    text-decoration: none;
+} */
+ a:visited{
+    color: #04447c;
+} 
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #5bd1d1;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    font-family: lintel;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

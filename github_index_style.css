@@ -3,6 +3,7 @@
     background: url(145343.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center
 }
  body{
     position: relative;
@@ -74,7 +75,7 @@ ol.u{
 }
 
 .button:hover span {
-  padding-right: 25px;
+  padding-right: 10px;
 }
 
 .button:hover span:after {

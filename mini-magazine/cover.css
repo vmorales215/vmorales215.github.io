@@ -1,6 +1,6 @@
 
 body{
-    background: url(images/dsc_0004%20copy.jpg);
+    background: url(images/photo-1457274858420-ea606e99cc5c.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -8,17 +8,20 @@ body{
 }
 #title{
    position: absolute;
-	bottom: 40%;
-	left: 25%;
-	width: 50%;
-	text-align: center;
-	border: 1px solid white;
-    font-family: lintel;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 125px;	
+    text-align: center;
+    font-family: "circular std";
     font font-weight: bolder;
     font-size: 20pt;
-    color: orangered;
-    border: 2pt solid orangered;
-align-self: center;
+    border: 1px solid orangered;
+
+    
 }
 
 a:link, a:visited {

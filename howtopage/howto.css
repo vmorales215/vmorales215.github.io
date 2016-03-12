@@ -11,6 +11,7 @@
 body{
     background-color: #ECEBE8;
 }
+
 hr{
     color: black;
 }
@@ -27,7 +28,7 @@ hr{
     font-weight: bolder;
     text-align: left;
     color: #222;
-    width:900px;
+    width:100%;
 /*    background-color: #ECEBE8;*/
     margin: 0 auto;
 }
@@ -35,19 +36,52 @@ hr{
 
     font-size: 30pt;
     color: #545454;
-    padding: 15px 10px 0px 10px;
+    padding: 5px 15px 5px
+        15px;
     float: left;
     font-weight: bold;
-   
+    background-color: #93b874;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 #step{
     background-color: white;
-     border-radius: 6px;
+     border-radius: 5px;
 padding: 6pt;
+
 }
-img{border-radius: 8px;
-   
+
+#cheatsheet-left{
+width: 170px;
+padding:5px;
+    margin: auto;
+    float: left;
+    text-align: center;
+        font-size: 8pt;
+    font-family: avenir;
 }
+#cheatsheet-middle{   
+  width: 170px;
+    padding: 5px;
+    margin: auto;
+    float: right;
+    text-align: center;
+    font-size: 8pt;
+        font-family: avenir;
+
+}
+#cheatsheet-outer{
+   width:170px;
+    padding:5px;
+    margin: auto;
+    text-align: center;
+        font-size: 8pt;
+        font-family: avenir;
+
+
+}
+
 span{
     background-color: lightgray;
     padding: 0 10px;
@@ -79,9 +113,13 @@ li{
     font-size: 10pt;
     text-decoration: none;
     background-color: #F6F8F7;
-    margin: auto;
+    margin: 0 auto;
 }
 .links:link{
     text-decoration:none; 
-color: #363;}   
+color: #363;} 
+a:visited{
+    text-decoration: none;
+}
+a:link{text-decoration: none;}
 

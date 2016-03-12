@@ -97,7 +97,7 @@ input, select {
 /*Css Reset above*/
 
 
-
+}
 ul{
     list-style-type: none;
     margin: 0 auto;
@@ -125,4 +125,25 @@ li{
 }
 .active{
     background-color: #093A3E;
+}
+#centerwrap{
+    width: 900px;
+    margin: 0 auto;
+    align-content: center;
+}
+p{
+    font-family: lintel;
+    font-size: 14pt;
+    padding-top: 15px;
+}
+h1{
+font-family: lintel;
+    font-size: 50pt;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+font-family: lintel;
+    font-size: 20pt;
+    font-weight: bolder;
 }

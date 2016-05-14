@@ -290,7 +290,11 @@ p{
     font-family: jura;
    
 }
+.main textarea{
+    width: 90%;
+}
 .main form{
+    width: 100%;
     position: relative;
     top: 25.0vh;
 }
@@ -310,6 +314,11 @@ p{
     .main input[type=text]{
         width: 100%;
     }
+    .main textarea{
+    width: 100%;
+}
+    .main{
+margin: 0 2.0vw;    }
     
 }
 

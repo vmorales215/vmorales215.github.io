@@ -157,7 +157,7 @@ nav{
 
 /*search bar start*/
 
-input[type=text] {
+#nav input[type=text] {
     width: 100%;
     height: 25px;
     box-sizing: border-box;
@@ -257,6 +257,8 @@ width: 100%;
     padding-bottom: 10%;
     align-content: center;
     margin: 0 25.0vw;
+    font-family: jura;
+    font-size: 20pt
     
 }
 
@@ -275,43 +277,39 @@ p{
     padding-left: 7px;
    
 }
-.text{
-    font-family: georgia;
-    font-size: 1.0vw;
-    text-align:left;
-    line-height: 1.5;
-    
-}
-.image{
+.main input[type=text] {
     width: 100%;
-    height:28.0vw;
-    overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-h1{
+    height: 25px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+    background-color: lightgrey;
+    padding: 12px 20px 12px 10px;
     font-family: jura;
-    font-weight: bolder;
-    font-size: 2.0vw;
-    text-align: center
+   
 }
-cite{
-    color: lightgray
+.main form{
+    position: relative;
+    top: 25.0vh;
 }
 @media only screen and (max-width: 480px) {
-.text{
-        width: 100%;
-        font-size: 1em;
-    }
-    .image{
-        width: 100%;
-        height: 50.0vw;
-    }
-    .main{
-margin: 0 1.0vw;    }
-    h1{
-        font-size: 2.0em;
-    }
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
 }
+
+@media only screen and (max-width: 480px) {
+	.main {
+		width: 100%; 
+	}
+	.main form {
+		width: 100%; 
+	}
+    .main input[type=text]{
+        width: 100%;
+    }
+    
+}
+

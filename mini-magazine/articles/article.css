@@ -1,6 +1,6 @@
 /* html5reset.css - 01/11/2011 */
-/* 
-{html, body, div, span, object, iframe,
+
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -27,7 +27,7 @@ body {
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
-    display: block;
+	display: block;
 }
 
 nav ul {
@@ -52,14 +52,14 @@ a {
     background: transparent;
 }
 
-change colours to suit your needs
+/* change colours to suit your needs */
 ins {
     background-color: #ff9;
     color: #000;
     text-decoration: none;
 }
 
-change colours to suit your needs
+/* change colours to suit your needs */
 mark {
     background-color: #ff9;
     color: #000; 
@@ -81,7 +81,7 @@ table {
     border-spacing: 0;
 }
 
-change border colour to suit your needs
+/* change border colour to suit your needs */
 hr {
     display: block;
     height: 1px;
@@ -93,58 +93,226 @@ hr {
 
 input, select {
     vertical-align: middle;
-}} */
-/*Css Reset above*/
-
-
-
-ul{
-    list-style-type: none;
-    margin: 0 auto;
-    padding:0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left:0;
-    background-color: #001011;
 }
-li a{
-   display: block; 
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+
+
+/*----------html reset above-------------*/
+
+
+
+
+/*==========Nav start===========*/
+nav{
+    background-color: black;
+    width: 100%;
+}
+/*menu button start*/
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    font-family: lintel;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    cursor: pointer;
     
 }
-li a:hover{
-    background-color:#093A3E;
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
 }
-li{
-    float: left;
+#menubutton{
+    cursor: pointer;
+    padding-left: 5px;
+    margin-right: 10px;
 }
-.active{
-    background-color: #093A3E;
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
-#centerwrap{
-    width: 900px;
-    margin: 0 auto;
+
+/*menu button end*/
+
+
+
+
+/*search bar start*/
+
+input[type=text] {
+    width: 100%;
+    height: 25px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    background-image: url(images/698627-icon-111-search-128.png);
+    background-position:right; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+   
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+input:focus {
+width: 100%;
+     -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+/*search bar end*/
+
+
+/*=Nav Responsive code start=*/
+
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  sidenav-GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+
+/*  GRID OF TWO  */
+.span_2_of_2nav {
+	width: 20%;
+}
+.span_1_of_2nav {
+	width: 78%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2nav {
+		width: 45%; 
+	}
+	.span_1_of_2nav {
+		width: 50%; 
+	}
+    
+}
+/*=====Nav Responsive code end=======*/
+
+/*misc styling*/
+
+#sitelogo{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/*misc styling end*/
+
+
+/*==================NAV END==============*/
+
+
+/*====MAIN BODY ARRANGEMENTS Start======*/
+
+
+.main{
+    padding-bottom: 10%;
     align-content: center;
+    margin: 0 25.0vw;
+    
+}
+
+.footer-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    z-index: 6;
+    font-family: jura;
+    font-size: 1.5em;
 }
 p{
-    font-family: avenir
-        ;
-    font-size: 14pt;
-    padding-top: 15px;
+    padding-left: 7px;
+   
+}
+.text{
+    font-family: georgia;
+    font-size: 1.0vw;
+    text-align:left;
+    line-height: 1.5;
+    
+}
+.image{
+background-image:url(images/wave%20dress.jpg);
+     width: 100%;
+    height:28.0vw;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 h1{
-font-family: lintel;
-    font-size: 50pt;
-    text-align: center;
-    font-weight: bold;
-}
-h2{
-font-family: lintel;
-    font-size: 20pt;
+    font-family: jura;
     font-weight: bolder;
+    font-size: 2.0vw;
+    text-align: center
+}
+cite{
+    color: lightgray
+}
+@media only screen and (max-width: 480px) {
+.text{
+        width: 100%;
+        font-size: 1em;
+    }
+    .image{
+        width: 100%;
+        height: 50.0vw;
+    }
+    .main{
+margin: 0 1.0vw;    }
+    h1{
+        font-size: 2.0em;
+    }
 }

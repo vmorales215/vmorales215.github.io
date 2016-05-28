@@ -257,6 +257,7 @@ width: 100%;
 /*top story start*/
 a:link, a:visited{
     text-decoration: none;
+    text-decoration-color: rgba(255, 250, 240, 0);
 }
 .main{
     padding-bottom: 10%;
@@ -284,7 +285,7 @@ div.textcontainer_top{
     font-family: jura;
     font-size: 2.5vh;
     font-weight: bolder;
-    border-top: 3pt solid orange;
+    border-top: 3pt solid blue;
     width: 75%;
     position: absolute;
 bottom: 0%;
@@ -298,7 +299,7 @@ bottom: 0%;
     font-family: jura;
     font-size: 2.5vh;
     font-weight: bolder;
-    border-top: 3pt solid orange;
+    border-top: 3pt solid yellow;
     width: 75%;
     position: absolute;
 bottom: 0%;
@@ -313,7 +314,7 @@ div.textcontainer_right{
     font-family: jura;
     font-size: 2.5vh;
     font-weight: bolder;
-    border-top: 3pt solid orange;
+    border-top: 3pt solid blue;
     width: 75%;
     position: absolute;
 bottom: 0%;
@@ -452,9 +453,9 @@ margin: 0 1.0vw;    }
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 15.0vh;
+    height: 13.35vh;
     width:30%;
-    
+     border-top: 3pt solid purple;
     float: left;
     overflow: hidden;
    
@@ -465,9 +466,9 @@ margin: 0 1.0vw;    }
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 15.0vh;
+    height: 13.35vh;
     width:30%;
-    
+     border-top: 3pt solid blue;
     float: left;
     overflow: hidden;
    
@@ -478,9 +479,9 @@ margin: 0 1.0vw;    }
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 15.0vh;
+    height: 13.35vh;
     width:30%;
-    
+     border-top: 3pt solid blue;
     float: left;
     overflow: hidden;
    
@@ -491,9 +492,9 @@ margin: 0 1.0vw;    }
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 15.0vh;
+    height: 13.35vh;
     width:30%;
-    
+     border-top: 3pt solid blue;
     float: left;
     overflow: hidden;
    
@@ -504,9 +505,9 @@ margin: 0 1.0vw;    }
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 15.0vh;
+    height: 13.35vh;
     width:30%;
-    
+    border-top: 3pt solid purple;
     float: left;
     overflow: hidden;
    
@@ -518,14 +519,13 @@ margin: 0 1.0vw;    }
     padding: 5px 0px;
     background-color: white;
     font-family: jura;
-    font-size: 2.5vh;
+    font-size: 2.0vh;
     font-weight: bolder;
     width: 70%;
     margin-left:30%;
-    height: 13.2vh;
+    height: 12.3vh;
 /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-    border-top: 3pt solid orange;
-    border-bottom: 3pt solid lightgrey;
+    border-bottom: 3pt solid lightgrey;border-top: 3pt solid lightgrey;
     
     
     
@@ -563,5 +563,15 @@ margin: 0 1.0vw;    }
     width: 100%;
     z-index: 0;
 }
-
+.footer-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    z-index: 6;
+    font-family: jura;
+    font-size: 1.5em;
+}
 

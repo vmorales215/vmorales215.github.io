@@ -1,0 +1,582 @@
+/* html5reset.css - 01/11/2011 */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000; 
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration:  line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;   
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+/*----------html reset above-------------*/
+
+
+
+
+/*--------------css start-----------*/
+
+
+/*==========Nav start===========*/
+nav{
+    background-color: black;
+    width: 100%;
+}
+/*menu button start*/
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: lintel;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    cursor: pointer;
+    
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+#menubutton{
+    cursor: pointer;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*menu button end*/
+
+
+
+
+/*search bar start*/
+
+input[type=text] {
+    width: 100%;
+    height: 25px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    background-image: url(images/698627-icon-111-search-128.png);
+    background-position:right; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+   
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+input:focus {
+width: 100%;
+     -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+/*search bar end*/
+
+
+/*=Nav Responsive code start=*/
+
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  sidenav-GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+
+/*  GRID OF TWO  */
+.span_2_of_2nav {
+	width: 20%;
+}
+.span_1_of_2nav {
+	width: 78%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2nav {
+		width: 45%; 
+	}
+	.span_1_of_2nav {
+		width: 50%; 
+	}
+}
+/*=====Nav Responsive code end=======*/
+
+/*misc styling*/
+
+#sitelogo{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/*misc styling end*/
+
+
+/*==================NAV END==============*/
+
+
+/*====MAIN BODY ARRANGEMENTS Start======*/
+
+/*top story start*/
+a:link, a:visited{
+    text-decoration: none;
+    text-decoration-color: rgba(255, 250, 240, 0);
+}
+.main{
+    padding-bottom: 10%;
+    align-content: center;
+    margin: 0 18.0vw;
+    min-height: 100%;
+    
+}
+.h1photo{
+    background-image: url(article_images/wave%20dree%20img.jpg);
+    width: 100%;
+    height:40vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+div.textcontainer_top{
+    text-align: left;
+    padding: 5px 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: jura;
+    font-size: 2.0vh;
+    font-weight: bolder;
+    border-top: 3pt solid purple;
+    width: 75%;
+    position: absolute;
+bottom: 0%;
+    border-bottom: 3pt solid lightgrey;
+    
+}div.textcontainer_left{
+    text-align: left;
+    padding: 5px 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: jura;
+    font-size: 2.0vh;
+    font-weight: bolder;
+    border-top: 3pt solid purple;
+    width: 75%;
+    position: absolute;
+bottom: 0%;
+    border-bottom: 3pt solid lightgrey;
+    
+}
+div.textcontainer_right{
+    text-align: left;
+    padding: 5px 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: jura;
+    font-size: 2.0vh;
+    font-weight: bolder;
+    border-top: 3pt solid purple;
+    width: 75%;
+    position: absolute;
+bottom: 0%;
+    border-bottom: 3pt solid lightgrey;
+    
+}
+p{
+    padding-left: 7px;
+   
+}
+
+hr{
+    margin: 0 5px;
+    padding: 0px 10px;
+    
+}
+cite{
+    font-size: .6em;
+    padding: 2px;
+    color: lightgrey;
+    width: 75%;
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .textcontainer_top,.textcontainer_left,.textcontainer_right{
+        min-width: 100%;
+    }
+    .main{
+margin: 0 1.0vw;    }
+    .h1photo{
+        height:60vw;
+        width: 100%;
+    }
+        
+    
+}
+/*Top story end*/
+
+/*2nd story row start*/
+
+.span_2_of_2right {
+	width: 49.2%;
+    height:27.675vw;
+    overflow: hidden;
+    background-image: url(article_images/116.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.span_1_of_2left {
+	width: 49.2%;
+    height:27.675vw;
+    overflow: hidden;
+    background-image: url(article_images/13.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+
+    
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2right {
+		width: 100%;
+        height:56.25vw;
+        
+	}
+	.span_1_of_2left {
+		width: 100%; 
+        height:56.25vw;
+	}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Start of article feed*/
+
+
+.span_2_of_2video {
+	width: 49.2%;
+    height:50.0vw;
+   
+    position: relative;
+    
+
+}
+.span_1_of_2list {
+	width: 49.2%;
+    height:50.0vw;
+   
+    position: relative;
+    
+    
+    
+
+    
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2video {
+		width: 100%;
+        height: 90.0vh
+        
+	}
+	.span_1_of_2list {
+		width: 100%; 
+        float: none;
+	}
+    .list_text hr{
+        width: 100%;
+    }
+    
+  
+    
+}
+
+
+
+.article_image0{
+    background-image:url(article_images/article0.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13.35vh;
+    width:30%;
+     border-top: 3pt solid purple;
+    float: left;
+    overflow: hidden;
+   
+    
+    
+}.article_image1{
+    background-image: url(article_images/article1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13.35vh;
+    width:30%;
+     border-top: 3pt solid blue;
+    float: left;
+    overflow: hidden;
+   
+    
+    
+}.article_image2{
+    background-image: url(article_images/article2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13.35vh;
+    width:30%;
+     border-top: 3pt solid blue;
+    float: left;
+    overflow: hidden;
+   
+    
+    
+}.article_image3{
+    background-image: url(article_images/article3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13.35vh;
+    width:30%;
+     border-top: 3pt solid blue;
+    float: left;
+    overflow: hidden;
+   
+    
+    
+}.article_image4{
+    background-image: url(article_images/article4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13.35vh;
+    width:30%;
+    border-top: 3pt solid purple;
+    float: left;
+    overflow: hidden;
+   
+   
+    
+    
+}
+.list_text{
+    text-align: left;
+    padding: 5px 0px;
+    background-color: white;
+    font-family: jura;
+    font-size: 2.0vh;
+    font-weight: bolder;
+    width: 70%;
+    margin-left:30%;
+    height: 12.3vh;
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    border-top: 3pt solid purple;
+    
+    
+    
+    
+}
+.list_text p, .list_text cite, .list_text hr{
+    position: relative;
+    top:35px;
+    
+}
+.list_text hr{
+    color: black;
+    width: 90%;
+}
+.list_text cite, .list_text p{
+    
+    font-size: 1.5vh;
+}
+
+.footer-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    z-index: 6;
+    font-family: jura;
+    font-size: 1.5em;
+}
+
+/*Video right side*/
+
+.fixedvideo0{
+    height:100%;
+    width: 100%;
+    z-index: 0;
+}
+.footer-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    z-index: 6;
+    font-family: jura;
+    font-size: 1.5em;
+}
+
